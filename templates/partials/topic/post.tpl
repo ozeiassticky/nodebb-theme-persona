@@ -63,7 +63,7 @@
 <br />
 
 <div class="content" component="post/content" itemprop="text">
-	{posts.content}
+	{posts.textContent || posts.content}
 </div>
 
 <div class="post-footer">

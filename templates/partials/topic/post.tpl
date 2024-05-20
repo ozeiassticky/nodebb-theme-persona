@@ -63,7 +63,12 @@
 <br />
 
 <div class="content" component="post/content" itemprop="text">
-	{posts.textContent || posts.content}
+	{{{ if posts.textContent }}}
+	{posts.textContent}
+	{{{ end }}}
+	{{{ if !posts.textContent }}}
+	{posts.content}
+	{{{ end }}}
 </div>
 
 <div class="post-footer">
